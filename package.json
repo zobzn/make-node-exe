@@ -1,0 +1,20 @@
+{
+  "name": "make-node-exe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hello.js",
+  "scripts": {
+    "build": "ncc build hello.js -m -o dist && pkg -t node10-win dist/index.js --out-path dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.22.1",
+    "pkg": "^4.4.8"
+  }
+}
